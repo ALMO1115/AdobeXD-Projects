@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+   
+
+
+    <!--HEAD-->
+    <head>                     <!--meta relates to data about data - so, this tag conveys data to browsers and search engines (that isn't displayed to users), such as, description of page, keywords to help categorize information in the document, note the author, etc.-->
+        <meta charset="UTF-8"> <!--UTF-8 refers to the amount of bits used to relay data - in this case, using an 8 bit (1 byte) format. One or more bits represents individual characters. Ex: copyright symbol in UTF is U00A9 (the A comes from hexadecimal # system)-->
+        <meta name="viewport" content="width=device-width" /> <!--Viewport relates to the port in which you are viewing this website (could be an iPad, Samsung Smart Phone, desktop computer - each with their own dimensions). This is telling the website to fit the content within the confines of the width of the device used when viewing this website-->
+        <title>TEST Canyon Hikers</title> <!--this is the text that displays on the tab within the broswer-->
+        <link rel="icon" type="image/x-icon" href="./Media-Files/images/CanyonHikersLogo.png">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="./CSS/TESTING.css">
+
+        <script src="./JS/portfolio.js"></script>
+
+
+<!--NAVIGATION BAR-->
+<div class="NAVBAR">
+        
+    <!--LEFT LINKS-->
+    <a href="#StopAudio">
+        <!--Got the below code here: https://icons.getbootstrap.com/icons/pause-circle-fill/-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
+            </svg>
+    </a>
+    <a href="#Destinations">Destinations</a> 
+    <a href="#Experiences">Experiences</a>
+    <a href="#Offers">Offers</a>
+    <a href="#Tips">Safety Tips</a>
+
+    <!--RIGHT LINKS-->
+    <div class="NAVBAR-RIGHT">
+        <a href="#Favorite">
+            <!--Got the below code here: https://icons.getbootstrap.com/icons/bag/-->             
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>
+            <!-- or heart HTML code is: &#9825;-->
+        </a>
+        <a href="#Bag">
+            <!--Got the below code here: https://icons.getbootstrap.com/icons/bag/-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                </svg>
+        </a>
+        <a href="#Search">
+            <!--Got the below code here: https://icons.getbootstrap.com/icons/bag/-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            <!-- or magnifying class HTML code is: &#128269-->
+        </a>
+    </div>
+</div>
+    <!--AUDIO in BACKGROUND
+    <audio autoplay controls loop>
+        <source src="./Media-Files/Sound/mixkit-natural-ambience-with-flowing-water-and-birds-61.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+-->
+    
+<!--other audio
+
+        <iframe src="https://olafwempe.com/mp3/silence/silence.mp3″ type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio autoplay>
+<source src="Media-Files/Sound/mixkit-natural-ambience-with-flowing-water-and-birds-61.wav" type="audio/mp3">
+</audio>
+
+-->
+
+    </head>
+    
+    
+    
+    <!--BODY-->
+
+    <body>
+        
+ 
+        <!--LANDING INFO-->
+        <div>
+            <!--LEFT COLUMN-->
+            <div class="COL-LEFT">
+                <!--LOGO-->
+                <img id="container" src="./Media-Files/images/CanyonHikersLogo.png" alt="Canyon Hikers">
+            </div>
+
+            <!--RIGHT COLUMN-->
+            <div class="COL-RIGHT">
+                <!--SEARCH BAR-->
+                <form action="/action_page.php">
+                    <label for="location"></label><br>
+                    <input type="text" class="search" size="25" placeholder="Where would you like to go?">
+                    &nbsp; &nbsp; &nbsp;
+                    <input type="text" class="search" placeholder="Type (trek, hike, ...)    ">
+                    &nbsp; &nbsp; &nbsp;
+                    <button>More Details</button>
+                </form> 
+                <!--LANDING HEADER/TAGLINE-->
+                <p class="header">Grand Canyon Tours</p>
+                <p>Enjoy some of the most spectacular views in the world on a Grand Canyon hiking tour!</p>
+            </div>
+        </div>
+
+
+
+    <!--CAROUSEL-->
+
+        <!--HIKING CARDS CAROUSEL-->
+        <div class="carousel">
+            <section>
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content">
+                        
+                        <!--(1)CARD-->
+                        <div class="swiper-slide card">
+                            <!--<div class="card-content">-->
+                            <!--BACKGROUND VIDEO-->
+                                <div class="video">
+                                    <video autoplay muted playsinline loop> <!--add this in here? width="420" height="340"-->
+                                        <source src="./Media-Files/videos/pexels-mikhail-nilov-8319900.mp4" type="video/mp4">
+                                        <source src="movie.ogg" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                                
+                                <!--CARD INFO-->
+                                <!--<div class="media-icons">
+                                    <p class="header">Horseshoe Loop</p>
+                                    <button class="card-button">Testing</button>
+                                    <p class="pricing">Activity Level: 2  |  Prices from $500</p>
+                                </div>-->
+                                <div class="hike-button">
+                                    <div class="hike">
+                                        <!--<p class="card-header">-->
+                                        Horseshoe Loop
+                                    </div>
+                                    <div class="button">
+                                        <button>More Details</button>
+                                    </div>
+                                    <div class="pricing">
+                                        <!--<p class="pricing">Activity Level: 2  |  Prices from $500</p>-->
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <!--(2)CARD-->
+                        <div class="swiper-slide card">
+                            <!--<div class="card-content">-->
+                            <!--BACKGROUND VIDEO-->
+                                <div class="video">
+                                    <video autoplay muted playsinline loop> <!--add this in here? width="420" height="340"-->
+                                        <source src="./Media-Files/videos/pexels-kindel-media-9699392.mp4" type="video/mp4">
+                                        <source src="movie.ogg" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                                
+                                <!--CARD INFO-->
+                                    <div class="hike-button">
+                                        <div class="hike">
+                                            <!--<p class="card-header">-->
+                                            South Kaibab
+                                        </div>
+                                        <div class="button">
+                                            <button>More Details</button>
+                                        </div>
+                                        <div class="pricing">
+                                            <!--<p class="pricing">Activity Level: 2  |  Prices from $500</p>-->
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                        <!--(3)CARD-->
+                        <div class="swiper-slide card">
+                            <!--<div class="card-content">-->
+                            <!--BACKGROUND VIDEO-->
+                                <div class="video">
+                                    <video autoplay muted playsinline loop> <!--add this in here? width="420" height="340"-->
+                                        <source src="./Media-Files/videos/production ID_4253640.mp4" type="video/mp4">
+                                        <source src="movie.ogg" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                                
+                                <!--CARD INFO-->
+                                    <div class="hike-button">
+                                        <div class="hike">
+                                            <!--<p class="card-header">-->
+                                            Bright Angel
+                                        </div>
+                                        <div class="button">
+                                            <button>More Details</button>
+                                        </div>
+                                        <div class="pricing">
+                                            <!--<p class="pricing">Activity Level: 2  |  Prices from $500</p>-->
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                        <!--(4)CARD-->
+                        <div class="swiper-slide card">
+                            <!--<div class="card-content">-->
+                            <!--BACKGROUND VIDEO-->
+                                <div class="video">
+                                    <video autoplay muted playsinline loop> <!--add this in here? width="420" height="340"-->
+                                        <source src="./Media-Files/videos/production ID_4361418.mp4" type="video/mp4">
+                                        <source src="movie.ogg" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                                
+                                <!--CARD INFO-->
+                                    <div class="hike-button">
+                                        <div class="hike">
+                                            <!--<p class="card-header">-->
+                                            Canyon Rim
+                                        </div>
+                                        <div class="button">
+                                            <button>More Details</button>
+                                        </div>
+                                        <div class="pricing">
+                                            <!--<p class="pricing">Activity Level: 2  |  Prices from $500</p>-->
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                        <!--(5)CARD-->
+                        <div class="swiper-slide card">
+                            <!--<div class="card-content">-->
+                            <!--BACKGROUND VIDEO-->
+                                <div class="video">
+                                    <video autoplay muted playsinline loop> <!--add this in here? width="420" height="340"-->
+                                        <source src="./Media-Files/videos/video.mp4" type="video/mp4">
+                                        <source src="movie.ogg" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>                                
+                                <!--CARD INFO-->
+                                    <div class="hike-button">
+                                        <div class="hike">
+                                            <!--<p class="card-header">-->
+                                            Plateau Point
+                                        </div>
+                                        <div class="button">
+                                            <button>More Details</button>
+                                        </div>
+                                        <div class="pricing">
+                                            <!--<p class="pricing">Activity Level: 2  |  Prices from $500</p>-->
+                                        </div>
+                                    </div>
+                        </div>                        
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--END HIKING CAROUSEL-->
+
+
+        <!--CAROUSEL NAVIGATION-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!--<div class="swiper-pagination"></div>-->
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+    <!--END CAROUSEL-->
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--FOOTER SECTION-->
+    <footer>
+        &copy ALMO: copying or using my work without my permission is prohibited.
+    </footer>
+</html>
